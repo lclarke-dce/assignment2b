@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Assignment 2b - v2</title>
+	    <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+
+		<div class="main-container">
+			<h1>Tic Tac Toe Game</h1>
+
+			<p>
+				<a class="btn-link" href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">Tic-Tac-Toe - Wikipedia</a>
+			</p>
+
+			<div class="turn-heading">
+				<h2>X's Turn</h2>
+			</div>
+
+			<div class="ttt-container">
+				<script>
+					const NUM_SQUARES = 9;
+
+					for (i=0; i<NUM_SQUARES; i++) {
+						id = "sq"+i;
+						document.write( "<div class='square' id='" + id + "'></div>" );
+					}
+				</script>
+
+				<script>
+					const sq3 = document.getElementById("sq3");
+					const sq4 = document.getElementById("sq4");
+					const sq8 = document.getElementById("sq8");
+
+					sq3.innerHTML = "X";
+					sq4.innerHTML = "X";
+					sq8.innerHTML = "O";
+				</script>
+			</div>
+
+			<div class="start-btn-container">
+				<button id="start-btn" class="start-btn">Start Game</button>
+			</div>
+		</div>
+	</body>
+</html>
