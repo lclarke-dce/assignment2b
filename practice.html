@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Assignment 2b - JavaScript Practice</title>
+	    <link rel="stylesheet" href="styles.css">
+	    <script>
+	    	window.onload = function() {
+	    		const numberList = document.getElementById("number-list");
+	    		const numberPrompt = prompt("Please enter a number:");
+
+		    	const timesTable = function(number) {
+		    		for (let i = 1; i <= 12; i++) {
+		    			let numberListItem = document.createElement("li");
+		    			numberListItem.innerHTML = `${number} x ${i} = ${number * i}`;
+		    			numberList.appendChild(numberListItem);
+		    		}
+		    	}
+
+		    	timesTable(numberPrompt);
+	    	}
+	    </script>
+	</head>
+	<body>
+
+		<div class="main-container">
+			<h1>Practice</h1>
+			<h2>Times Table List</h2>
+			<ul id="number-list"></ul>
+
+			<h2>Fahrenheit to Celsius</h2>
+			<script>
+		    	// (°C) = (°F) - 32 * 5/9
+		    	const tempContainer = document.getElementById("temp-container");
+
+		    	const fahr2cels = function(ftemp) {
+		    		const convertedTemp = ((ftemp - 32) * (5/9)).toFixed(2);
+		    		document.write(`<p>${ftemp}° Fahrenheit is ${convertedTemp}° Celsius.</p>`);
+		    	}
+
+		    	fahr2cels(13);
+		    	fahr2cels(21);
+		    	fahr2cels(55);
+		    	fahr2cels(0);
+		    	fahr2cels(32);
+	    	</script>
+		</div>
+	</body>
+</html>
