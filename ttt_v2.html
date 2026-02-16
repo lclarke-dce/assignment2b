@@ -4,7 +4,55 @@
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Assignment 2b - Tic Tac Toe Game</title>
-	    <link rel="stylesheet" href="styles.css">
+	    <style>
+			.main-container {
+				max-width: 400px;
+				text-align: center;
+				padding-top: 40px;
+				margin: auto;
+				font-family: sans-serif;
+			}
+			.turn-heading {
+				border: 1px solid;
+			}
+			.ttt-container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 20px -5px 0;
+			}
+			.square {
+				width: 100px;
+				height: 100px;
+				border: 1px solid;
+				margin: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 30px;
+				cursor: pointer;
+			}
+			.square:hover {
+				background-color: yellow;
+			}
+			.ttt-choice {
+				font-size: 30px;
+			}
+			.btn-link {
+				color: blue;
+			}
+			.start-btn-container {
+				margin-top: 30px;
+			}
+			.start-btn {
+				background-color: cyan;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			.start-btn:hover {
+				background-color: lightblue;
+			}
+	    </style>
 	</head>
 	<body>
 
